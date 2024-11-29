@@ -55,4 +55,3 @@ combined_df = pd.merge(transactions_df, merchants_df, on="merchant_id", how="lef
 # Save to CSV
 combined_df.to_csv("combined_merchant_transaction_data.csv", index=False)
 
-print("Combined dataset saved successfully!")
