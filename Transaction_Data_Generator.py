@@ -42,11 +42,11 @@ def generate_transaction_data(merchant_profiles, num_transactions=1000):
 import pandas as pd
 
 # Generate Merchant Profiles
-merchants = generate_merchant_profile(num_profiles=1000)
+merchants = generate_merchant_profile(num_profiles=10000)
 merchants_df = pd.DataFrame(merchants)
 
 # Generate Transactions
-transactions = generate_transaction_data(merchants, num_transactions=1000)
+transactions = generate_transaction_data(merchants, num_transactions=10000)
 transactions_df = pd.DataFrame(transactions)
 
 # Merge DataFrames
